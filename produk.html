@@ -15,25 +15,32 @@
     <style>
         /* tulis kode CSS internal di bawah sini */
         
+        body {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzl9CcpGcglqWwhL2aT6-xy9x_rwsi0iuMAw&usqp=CAU') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
 
         .bg-blue {
-            background-color: rgb(147, 76, 10);
+            background-color: rgb(84, 77, 71);
         }
 
         a span {
-            color: rgb(102, 232, 121);
+            color: rgb(13, 204, 128);
         }
 
         .color-green {
-            color: rgb(102, 232, 121)
+            color: rgb(13, 204, 128);
         }
 
         .text-pink {
             color: rgb(234, 245, 255);
+            
         }
 
         .text-pink:hover {
             color: rgb(13, 204, 128);
+            transition: .5s;
         }
 
         .price-coffe {
@@ -52,12 +59,16 @@
             color: #fff;
         }
 
+        .icon-fill a i:hover {
+            color: rgb(13, 204, 128);
+        }
+
         .icon-fill a svg {
             fill: #fff;
         }
 
-        .space-between {
-            justify-content: space-between;
+        .icon-fill a svg:hover {
+            color: rgb(13, 204, 128);
         }
 
         body {
@@ -73,7 +84,6 @@
         .navbar-stat {
             position: static;
         }
-
         /* Batas Akhir penulisan kode CSS internal */
     </style>
 </head>
@@ -113,17 +123,17 @@
     </nav>
     <!-- END OF NAVBAR -->
 
-    <!-- SECTION 1 -->
+    <!-- SECTION  -->
     <section class="container text-center mt-5 pt-3">
-        <div>
+        <div class="text-light">
             <!-- <p class="info" id="info"></p> -->
-            <h1>Pilih Produk Anda</h1>
+            <h1>Pilih Produk Kopi Anda</h1>
             <p class="fs-5">Kualitas Terbaik Biji kopi pilihan, fresh langsung dari petani</p>
-            <hr class="border border-dark border-3 oppacity-50">
+            <hr class="border border-light border-3 oppacity-50">
         </div>
 
         <!-- SELECT PRODUCT -->
-        <div class="form-dloating col-md-4 mx-auto">
+        <div class="form-dloating col-md-3 mx-auto">
             <select class="form-select" id="select_kopi" aria-label="Default select example">
                 <option selected disabled>Pilih yang Kamu Suka</option>
                 <option value="arabica">Arabica</option>
@@ -135,24 +145,10 @@
 
         <!-- PRODUCT-->
         <div id="baris_produk" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 text-center mt-5 ">
-            <!-- <div class="col mb-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/produk/product_capuchino.jpg" class="card-img-top" alt="...">
-                    <div class="card-body col-mb-3">
-                        <div>
-                            <h5 class="card-title mw-3">Capuchino</h5>
-                            <div class="container price-coffe">
-                                Price <span>Rp15.000,00</span>
-                            </div> 
-                        </div>
-                        <a href="#" class="btn btn-outline-dark mt-3"><i class="bi bi-cart4 me-1"></i>Buy Now</a>
-                    </div>
-                </div>
-            </div> -->
         <!-- END OF PRODUCT -->
 
     </section>
-    <!-- END OF SECTION 1 -->
+    <!-- END OF SECTION -->
 
     <!-- FOOTER -->
     <footer class="riki-block footer-small py-4 bg-blue">
@@ -166,7 +162,7 @@
             <div class="col mt-4 mt-lg-0 text-center">
               <ul class="nav justify-content-center">
                 <li class="nav-item active">
-                    <a class="nav-link text-pink" onclick="reRender()" id="home" href="#">Home</a>
+                    <a class="nav-link text-pink" id="home" href="#">Home</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link text-pink" href="index.html#best-seller">Best Seller</a>
@@ -182,7 +178,6 @@
                 </li>
               </ul>
             </div>
-
             <!-- END OF NAVBAR FOOTER -->
     
             <!-- MEDIA SOCIAL ICON -->
@@ -196,10 +191,8 @@
           <!-- END OF MEDIA SOCIAL ICON -->
     
           <div class="row mt-4">
-            <div class="col d-flex space-between align-items-center">
+            <div class="col align-items-center text-center">
               © 2023 Lazuardi Sastra AL-Ashri. All Rights Reserved
-<!--               <a class="btn btn-dark text-center text-light dark-mode" onclick="darkMode()" id="mode">Mode</a> -->
-            
             </div>
           </div>
         </div>
@@ -256,44 +249,6 @@
             })
         }
         /* Batas Akhir penulisan kode Javascript */
-
-        // DARK MODE
-        // let body = document.body;
-        // let mode = document.getElementById("mode");
-        // let home = document.getElementById("home");
-
-        // const darkLimit = 1000;
-        // let darkCounter = 0;
-        // let darkRemainingLeft;
-
-        // // START
-        // function darkMode() {
-        //     if (darkRemainingLeft == 1) {
-        //         // info.textContent = "Jatah Fitur Dark Mode Anda Sudah Habis";
-        //         mode.style.display = "none";
-        //         home.textContent = "Restart";
-        //         return;
-        //     }
-            
-        //     if (mode.checked){
-        //         mode.textContent = "Mode";
-        //     } else {
-        //         mode.textContent = "Mode"
-        //     }
-            
-        //     darkCounter += 1;
-        //     darkRemainingLeft = darkLimit - darkCounter;
-
-        //     // info.textContent = `Change Mode`;
-        //     // alert('Mode Berubah')
-
-        //     body.classList.toogle("white");
-        // }
-
-        // function reRender() {
-        //     location.reload();
-        // }
-        // DARK MODE END
     </script>
 </body>
 
