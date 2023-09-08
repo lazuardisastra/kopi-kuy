@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <title>Produk</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-icons.css">
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+        /* tulis kode CSS internal di bawah sini */
+        
+
+        .bg-blue {
+            background-color: rgb(147, 76, 10);
+        }
+
+        a span {
+            color: rgb(102, 232, 121);
+        }
+
+        .color-green {
+            color: rgb(102, 232, 121)
+        }
+
+        .text-pink {
+            color: rgb(234, 245, 255);
+        }
+
+        .text-pink:hover {
+            color: rgb(13, 204, 128);
+        }
+
+        .price-coffe {
+            text-align: center;
+            justify-content: space-between;
+            font-weight: bold;
+            
+        }
+
+        .price-coffe span {
+            text-decoration: underline;
+            
+        }
+
+        .icon-fill a i {
+            color: #fff;
+        }
+
+        .icon-fill a svg {
+            fill: #fff;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        .white {
+            background-color: black;
+            color: white;
+        }
+
+        .navbar-stat {
+            position: static;
+        }
+        /* Batas Akhir penulisan kode CSS internal */
+    </style>
+</head>
+
+<body>
+    <!-- Tulis Kode Bootstrap Di Bawah Sini -->
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-blue navbar-expand-lg bisadicopy navbar-stat">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo/logo_kuy.png" height="30" alt="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav11"
+                aria-controls="navbarNav11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav11">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-pink" href="index.html#best-seller">Best Seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-pink" href="index.html#our-team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-pink" href="index.html#review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-pink" href="index.html#contact-us">Contact Us</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-light ms-md-3 " href="https://wa.me/6287888027821"><i
+                        class="bi bi-whatsapp color-green"></i> <span>Chat</span></a>
+            </div>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- SECTION 1 -->
+    <section class="container text-center mt-5 pt-3">
+        <div>
+            <!-- <p class="info" id="info"></p> -->
+            <h1>Pilih Produk Anda</h1>
+            <p class="fs-5">Kualitas Terbaik Biji kopi pilihan, fresh langsung dari petani</p>
+            <hr class="border border-dark border-3 oppacity-50">
+        </div>
+
+        <!-- SELECT PRODUCT -->
+        <div class="form-dloating col-md-4 mx-auto">
+            <select class="form-select" id="select_kopi" aria-label="Default select example">
+                <option selected disabled>Pilih yang Kamu Suka</option>
+                <option value="arabica">Arabica</option>
+                <option value="robusta">Robusta</option>
+                <option value="nonkopi">Non Kopi</option>
+            </select>
+        </div>
+        <!-- END OF SELECT PRODUCT -->
+
+        <!-- PRODUCT-->
+        <div id="baris_produk" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 text-center mt-5 ">
+            <!-- <div class="col mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/produk/product_capuchino.jpg" class="card-img-top" alt="...">
+                    <div class="card-body col-mb-3">
+                        <div>
+                            <h5 class="card-title mw-3">Capuchino</h5>
+                            <div class="container price-coffe">
+                                Price <span>Rp15.000,00</span>
+                            </div> 
+                        </div>
+                        <a href="#" class="btn btn-outline-dark mt-3"><i class="bi bi-cart4 me-1"></i>Buy Now</a>
+                    </div>
+                </div>
+            </div> -->
+        <!-- END OF PRODUCT -->
+
+    </section>
+    <!-- END OF SECTION 1 -->
+
+    <!-- FOOTER -->
+    <footer class="riki-block footer-small py-4 bg-blue">
+        <div class="container">
+          <div class="row text-center align-items-center">
+            <div class="col-12 col-lg-2 text-lg-left">
+              <img alt="image" src="images/logo/logo_kuy.png" height="40">
+            </div>
+    
+            <!-- NAVBAR FOOTER -->
+            <div class="col mt-4 mt-lg-0 text-center">
+              <ul class="nav justify-content-center">
+                <li class="nav-item active">
+                    <a class="nav-link text-pink" onclick="reRender()" id="home" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-pink" href="index.html#best-seller">Best Seller</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-pink" href="index.html#our-team">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-pink" href="index.html#review">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-pink" href="index.html#contact-us">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- END OF NAVBAR FOOTER -->
+    
+            <!-- MEDIA SOCIAL ICON -->
+            <div class="col-12 col-lg-2 mt-4 mt-lg-0 text-lg-right icon-fill">
+              <a href="https://www.instagram.com/lazuardisastra" class="mx-2"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.facebook.com/lazuardisastra" class="mx-2"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/" class="mx-2"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.berpikirmatematis.blogsopt.com/" class="mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M22.814 9.031h-1.95c-1 0-1.185-.764-1.185-1.707.001-4.045-3.272-7.324-7.308-7.324h-5.062c-4.037 0-7.309 3.279-7.309 7.324v9.352c0 4.045 3.272 7.324 7.309 7.324h9.383c4.036 0 7.308-3.279 7.308-7.324v-6.457c0-.657-.531-1.188-1.186-1.188zm-15.428-3.031h4.229c.765 0 1.385.671 1.385 1.5s-.62 1.5-1.386 1.5h-4.228c-.766 0-1.386-.671-1.386-1.5s.62-1.5 1.386-1.5zm9.134 12h-9.04c-.817 0-1.48-.672-1.48-1.5 0-.83.663-1.5 1.48-1.5h9.039c.817 0 1.48.67 1.48 1.5.001.828-.662 1.5-1.479 1.5z"/></svg></a>
+            </div>
+          </div>
+          <!-- END OF MEDIA SOCIAL ICON -->
+    
+          <div class="row mt-4">
+            <div class="col d-flex space-between align-items-center">
+              © 2023 Lazuardi Sastra AL-Ashri. All Rights Reserved
+              <a class="btn btn-dark text-center text-light dark-mode" onclick="darkMode()" id="mode">Mode</a>
+            
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- END OF FOOTER -->
+
+    <!-- Batas Akhir penulisan kode Bootstrap -->
+    <script>
+        /* Tulis Javascript Di bawah Sini */
+
+        const sumber = "https://rikikurnia.com/prakerja/api/kopi"
+        const sumber2 = "data.json"
+        var data_kopi = []
+        var data_pilihan = []
+        
+        
+        $.getJSON(sumber).then(function(data) {
+            data_kopi = data
+            console.log(data_kopi)
+        })
+
+        document.querySelector("#select_kopi").addEventListener("click", function() {
+
+        })
+
+        select_kopi.onchange = function () {
+            let pilihan = select_kopi.value
+            console.log(pilihan)
+            data_pilihan = data_kopi[pilihan]
+            console.log(data_pilihan)
+            updateTampilan()
+        }
+
+        function updateTampilan() {
+            baris_produk.innerHTML = ""
+            data_pilihan.forEach(item => {
+                baris_produk.innerHTML += `<div class="col mb-3">
+                    <div class="card">
+                        <img src="${item.foto}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">${item.nama}</h5>
+                            <div class="hargaukuran row my-3">
+                                <div class="col">
+                                    ${item.size}
+                                </div>
+                                <div class="col fw-bold text-primary">
+                                    Rp${item.harga}
+                                </div>
+                            </div>
+                            <a href="${item.link}" class="btn btn-success w-100"><i class="bi bi-basket"></i> Buy Now</a>
+                        </div>
+                    </div>
+                </div>`
+            })
+        }
+        /* Batas Akhir penulisan kode Javascript */
+
+        // DARK MODE
+        // let body = document.body;
+        // let mode = document.getElementById("mode");
+        // let home = document.getElementById("home");
+
+        // const darkLimit = 1000;
+        // let darkCounter = 0;
+        // let darkRemainingLeft;
+
+        // // START
+        // function darkMode() {
+        //     if (darkRemainingLeft == 1) {
+        //         // info.textContent = "Jatah Fitur Dark Mode Anda Sudah Habis";
+        //         mode.style.display = "none";
+        //         home.textContent = "Restart";
+        //         return;
+        //     }
+            
+        //     if (mode.checked){
+        //         mode.textContent = "Mode";
+        //     } else {
+        //         mode.textContent = "Mode"
+        //     }
+            
+        //     darkCounter += 1;
+        //     darkRemainingLeft = darkLimit - darkCounter;
+
+        //     // info.textContent = `Change Mode`;
+        //     // alert('Mode Berubah')
+
+        //     body.classList.toogle("white");
+        // }
+
+        // function reRender() {
+        //     location.reload();
+        // }
+        // DARK MODE END
+    </script>
+</body>
+
+</html>
